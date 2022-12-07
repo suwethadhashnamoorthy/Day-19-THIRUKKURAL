@@ -3,7 +3,6 @@ async function thirukural(num) {
         let data_from_api=await fetch("https://api-thirukkural.vercel.app/api?num="+`${num}`);
         let finaldata=await data_from_api.json();
 
-
         document.getElementById("number").innerText=finaldata.number;
         document.getElementById("sect_tam").innerText=finaldata.sect_tam;
         document.getElementById("chapgrp_tam").innerText=finaldata.chapgrp_tam;
